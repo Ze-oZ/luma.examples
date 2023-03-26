@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2014-18 Richard Hull and contributors
 # See LICENSE.rst for details.
+# Modified by ZeoZ 
 
 import math
 import datetime
@@ -10,8 +11,8 @@ from hotspot.common import title_text, tiny_font
 
 
 def posn(angle, arm_length):
-    dx = int(math.cos(math.radians(angle)) * arm_length)
-    dy = int(math.sin(math.radians(angle)) * arm_length)
+    dx = int(math.cos(math.radians(angle)) * arm_length / 1.2)
+    dy = int(math.sin(math.radians(angle)) * arm_length / 2)
     return (dx, dy)
 
 
